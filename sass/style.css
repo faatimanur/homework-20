@@ -820,4 +820,30 @@ footer .footer__content .copyright .social img:hover {
   .navigation .button-menu {
     display: none;
   }
+  .navigation .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .home-content {
+    padding: 218px 0 227px 0;
+  }
+  .home-content .home__title {
+    margin-left: 90px;
+  }
+  .page-1__content {
+    padding: 50px 0;
+  }
+  .page-1__content .cards {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .page-1__content .cards .card-1 {
+    width: 300px;
+    height: 300px;
+  }
+  .page-1__content .cards .card-2 {
+    width: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

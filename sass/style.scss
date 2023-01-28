@@ -815,5 +815,16 @@ footer {
         .button-menu {
             display: none;
         }
+        .navbar-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+    .home-content {
+        padding: 218px 0 227px 0;
+        .home__title {
+            margin-left: 90px;
+        }
     }
 }
