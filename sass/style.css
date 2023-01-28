@@ -21,6 +21,9 @@
   flex-wrap: wrap;
   padding: 17px 0;
 }
+.navigation i {
+  display: none;
+}
 .navigation .logo-img {
   margin-right: 252px;
 }
@@ -791,4 +794,30 @@ footer .footer__content .copyright .social img:hover {
   opacity: 0.5;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+  .navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .navigation i {
+    display: block;
+    margin-left: 15px;
+  }
+  .navigation i:hover {
+    color: #E6B939;
+    transition: all 0.5s ease;
+  }
+  .navigation .button-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
