@@ -199,12 +199,12 @@
 }
 .page-2 .page-2__content .dec-1 {
   position: absolute;
-  right: -15px;
+  right: 0;
   top: 0;
 }
 .page-2 .page-2__content .dec-2 {
   position: absolute;
-  left: -15px;
+  left: 0;
   bottom: 0;
 }
 .page-2 .page-2__content .page-2__title {
@@ -395,9 +395,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 .page-4 .page-4__content {
+  height: 100%;
+  position: relative;
+}
+.page-4 .page-4__content .links {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -794,7 +797,7 @@ footer .footer__content .copyright .social img:hover {
   transition: all 0.5s ease;
 }
 
-@media screen and (min-width: 990px) and (max-width: 1200px) {
+@media screen and (min-width: 990.1px) and (max-width: 1200px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -893,7 +896,31 @@ footer .footer__content .copyright .social img:hover {
   }
   footer {
     width: 100%;
-    padding: 0 20px;
+  }
+  footer .footer__content {
+    width: 100%;
+    padding: 50px 0;
+  }
+  footer .footer__content .logo-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  footer .footer__content .links-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  footer .footer__content .links-container .main-links {
+    margin-right: 80px;
+  }
+  footer .footer__content .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
@@ -1336,7 +1363,8 @@ footer .footer__content .copyright .social img:hover {
     padding: 50px 0;
   }
   footer .footer__content .logo-img {
-    margin: 0 300px 75px 300px;
+    display: block;
+    margin: 30px auto;
   }
   footer .footer__content .links-container {
     display: flex;
@@ -1613,30 +1641,29 @@ footer .footer__content .copyright .social img:hover {
   .page-4 {
     width: 100%;
     height: 300px;
-    position: relative;
   }
   .page-4 .page-4__content {
+    position: relative;
+  }
+  .page-4 .page-4__content .links {
     position: absolute;
     right: 5px;
     bottom: 10px;
   }
-  .page-4 .page-4__content .links {
-    width: 100%;
-  }
   .page-4 .page-4__content .links ul {
     display: flex;
-    gap: 10px;
-    width: 450px;
+    gap: 9px;
+    width: 400px;
   }
   .page-4 .page-4__content .links ul a {
-    font-size: 8px;
-    line-height: 8px;
+    font-size: 7px;
+    line-height: 7px;
     display: flex;
-    gap: 8px;
+    gap: 5px;
   }
   .page-4 .page-4__content .links ul a img {
-    width: 14px;
-    height: 12px;
+    width: 12px;
+    height: 10px;
   }
   .page-5 {
     width: 100%;
@@ -1675,7 +1702,7 @@ footer .footer__content .copyright .social img:hover {
   }
   .page-6 .page-6__content .title-content {
     margin-bottom: 21px;
-    width: 450px;
+    width: 400px;
   }
   .page-6 .page-6__content .title-content span {
     font-size: 10px;
@@ -1699,20 +1726,20 @@ footer .footer__content .copyright .social img:hover {
     margin-bottom: 20px;
   }
   .page-6 .page-6__content .cards .card {
-    width: 450px;
+    width: 400px;
   }
   .page-6 .page-6__content .cards .card .img-content-1 {
-    width: 450px;
-    height: 250px;
+    width: 400px;
+    height: 200px;
     margin-bottom: 14px;
   }
   .page-6 .page-6__content .cards .card .img-content-2 {
-    width: 450px;
-    height: 250px;
+    width: 400px;
+    height: 200px;
     margin-bottom: 14px;
   }
   .page-6 .page-6__content .cards .card p {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
     width: 450px;
     margin-bottom: 8px;
@@ -1797,7 +1824,7 @@ footer .footer__content .copyright .social img:hover {
     width: 100%;
   }
   footer .footer__content {
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
   footer .footer__content .logo-img {
     margin: 0 130px 30px 130px;
@@ -1814,7 +1841,7 @@ footer .footer__content .copyright .social img:hover {
     gap: 45px;
   }
   footer .footer__content .links-container .main-links {
-    margin-right: 60px;
+    margin-right: 50px;
   }
   footer .footer__content .links-container span {
     font-size: 10px;
@@ -1830,12 +1857,12 @@ footer .footer__content .copyright .social img:hover {
   footer .footer__content .links-container p {
     font-size: 11px;
     line-height: 16px;
-    width: 438px;
+    width: 400px;
     margin-bottom: 7px;
   }
   footer .footer__content .links-container form {
-    width: 440px;
-    padding: 12px 0 12px 12px;
+    width: 400px;
+    padding: 10px 0 10px 10px;
     position: relative;
   }
   footer .footer__content .links-container form input {
@@ -1847,8 +1874,8 @@ footer .footer__content .copyright .social img:hover {
     line-height: 16px;
     padding: 9px 11px;
     position: absolute;
-    right: 4px;
-    top: 6px;
+    right: 3px;
+    top: 3px;
   }
   footer .footer__content .copyright {
     display: flex;
